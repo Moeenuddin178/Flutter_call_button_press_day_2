@@ -19,12 +19,28 @@ class Home extends StatelessWidget {
     appBar: new AppBar(
       title: new Text("View"),
     ),
-    body: InkWell(
-      child: new FlatButton(
-          onPressed: () => launch("tel://21213123123"),
-          child: new Text("Call me")),
-      splashColor: Colors.amberAccent,
-    ),
+    body: Container(
+      color: Colors.blueAccent,
+      child: new Center(
+        child: new Container(
+          decoration: new BoxDecoration(
+            gradient: new LinearGradient(colors:
+            [Colors.blue,
+            Colors.red,],
+              begin: FractionalOffset.topCenter,
+              end: FractionalOffset.bottomCenter,
+            ),
+          ),
+          child: new FlatButton(
+              onPressed: () => launch("tel://21213123123"),
+              child: new Text("Call me")),
+        ),
+
+
+      ),
+
+
+           ),
   );
 }
 
