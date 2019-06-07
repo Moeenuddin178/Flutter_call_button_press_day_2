@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//stateless widget :widget with having no state and remain same in thier whole life cycle 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+   
     return new MaterialApp(
       title: 'Flutter Demo',
       home: new Home(),
